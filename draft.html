@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ua nay la sn nma a`?</title>
+    <link rel="stylesheet" href="./draft.css">
+</head>
+<body>
+    <div class="hero">
+        <p>HAPPY BIRTH DAY<br>
+            Nguyễn Minh Anh</p>
+        <img src="./hpbd/nma.png" alt="">
+    </div>
+    
+    <div class="hero"></div>
+    <p id="music">
+        희영 (HEEYOUNG) - 구미구미(GUMIGUMI)
+    </p>
+    <div class="choinhac">
+        <button class="button-with-icon" onclick="toggleMusic()">
+            <svg
+            class="icon"
+            id="Play"
+            viewBox="0 0 48 48"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                class="color000000 svgShape"
+                fill="#ffffff"
+                d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"
+            ></path>
+            </svg>
+            <span class="text">Play / Pause</span>
+        </button>
+  
+    </div>
+        <audio id="background-music" loop>
+        <source src="./hpbd/gumigumi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p id="beauti-react">
+        Hãy xem Guma và Keria phản ứng như thế nào với nhan sắc của nma nhé:
+    </p>
+    <div class="container">
+        <div style="--r:-15;" class="glass">
+            <div class="first-img" style="background-image: url(./hpbd/guma2.jpg);">
+                <div class="name">Gumayusi</div>
+            </div>
+        </div>
+        <div style="--r:5;" class="glass">
+            <div class="first-img" style="background-image: url(./hpbd/nma.jpg);">
+                <div class="name">Minh Anh</div>
+            </div>
+        </div>
+        <div style="--r:25;" class="glass">
+            <div class="first-img" style="background-image: url(/hpbd/keria2.png);">
+                <div class="name">Keria</div>
+            </div>
+        </div>
+    </div>
+    <p id="guma-react">
+        Guma khi thấy nma ko vui:
+    </p>
+    <video class="guma-vid" width="320" height="240" autoplay muted loop>
+        <source src="./hpbd/ContentStudio_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p id="rolling">
+        Nói chứ cũng có quà nè, tặng cho nma cái đu quay Guma (1 Faker) nè:
+    </p>
+    <div class="wrapper">
+        <div class="inner" style="--quantity: 10;">
+        <div class="card" style="--index: 0;">
+            <div class="img" style="background-image: url(./hpbd/slide1.jpg);"></div>
+        </div>
+        <div class="card" style="--index: 1;">
+            <div class="img" style="background-image: url(./hpbd/slide2.jpg)"></div>
+        </div>
+        <div class="card" style="--index: 2;">
+            <div class="img" style="background-image: url(./hpbd/slide3.jpg)"></div>
+        </div>
+        <div class="card" style="--index: 3;">
+            <div class="img" style="background-image: url(./hpbd/slide4.jpg)"></div>
+        </div>
+        <div class="card" style="--index: 4;">
+            <div class="img" style="background-image: url(./hpbd/slide5.jpg)"></div>
+        </div>
+        <div class="card" style="--index: 5;">
+            <div class="img" style="background-image: url(./hpbd/slide6.jpg)"></div>
+        </div>
+        <div class="card" style="--index: 6;">
+            <div class="img" style="background-image: url(./hpbd/slide7.jpg)"></div>
+        </div>
+        <div class="card" style="--index: 7;">
+            <div class="img" style="background-image: url(./hpbd/slide8.jpg)"></div>
+        </div>
+        <div class="card" style="--index: 8;">
+            <div class="img" style="background-image: url(./hpbd/slide9.jpg)"></div>
+        </div>
+        <div class="card" style="--index: 9;">
+            <div class="img" style="background-image: url(./hpbd/slide10.jpg)"></div>
+        </div>
+        </div>
+    </div>
+    <script>
+        function toggleMusic() {
+            let music = document.getElementById("background-music");
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+</body>
+</html>
