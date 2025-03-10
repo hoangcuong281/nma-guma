@@ -9,30 +9,6 @@ body{
 
 }
 
-@-webkit-keyframes AnimateBG {
-0% {
-    background-position: 0% 50%;
-}
-50% {
-    background-position: 100% 50%;
-}
-100% {
-    background-position: 0% 50%;
-}
-}
-
-@keyframes AnimateBG {
-0% {
-    background-position: 0% 50%;
-}
-50% {
-    background-position: 100% 50%;
-}
-100% {
-    background-position: 0% 50%;
-}
-}
-
 
 .choinhac{
     display: flex;
@@ -41,7 +17,6 @@ body{
 
 }
 
-/* From Uiverse.io by elijahgummer */ 
 .button-with-icon {
     overflow: hidden;
     display: inline-flex;
